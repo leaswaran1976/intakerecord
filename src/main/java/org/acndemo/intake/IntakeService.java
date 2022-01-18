@@ -31,6 +31,7 @@ public class IntakeService {
 
     @GET
     public List<IntakeRecord> list() {
+        
         return inTakeRep.listAll();
     }
 
