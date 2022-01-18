@@ -1,13 +1,13 @@
 package org.acndemo.intake.models;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 import io.quarkus.mongodb.panache.PanacheMongoEntity;
 
 public class IntakeRecord extends PanacheMongoEntity {
     private String claimNumber;
     private String entryId;
-    private Date recordDate;
+    private LocalDate recordDate;
     
     public String getClaimNumber() {
         return claimNumber;
@@ -21,10 +21,10 @@ public class IntakeRecord extends PanacheMongoEntity {
     public void setEntryId(String entryId) {
         this.entryId = entryId;
     }
-    public Date getRecordDate() {
+    public LocalDate getRecordDate() {
         return recordDate;
     }
-    public void setRecordDate(Date recordDate) {
+    public void setRecordDate(LocalDate recordDate) {
         this.recordDate = recordDate;
     }
 
