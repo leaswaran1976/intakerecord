@@ -52,7 +52,11 @@
     <dependency>
        <groupId>io.quarkus</groupId>
        <artifactId>quarkus-mongodb-panache</artifactId>
-    </dependency>       
+    </dependency>      
+    <dependency>
+       <groupId>io.quarkus</groupId>
+       <artifactId>quarkus-resteasy-jsonb</artifactId>
+    </dependency> 
   </dependencies>
   <build>
     <plugins>
